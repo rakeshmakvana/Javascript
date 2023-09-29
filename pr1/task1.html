@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>task1</title>
+
+    <!-- costum css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!-- simple intrest -->
+    <section class="simple-i">
+        <div class="si-box">
+            <h1 class="si-h">
+                Simple Intrest Calculator
+            </h1>                
+        </div>
+        <div class="si-box-2">
+            <h2 class="si-h-2" id="pa">
+               
+            </h2>
+            <h2 class="si-h-2" id="ri">
+               
+            </h2>
+            <h2 class="si-h-2" id="ny">
+               
+            </h2>
+            <h2 class="si-h-3" id="total">
+                hdfhdh
+            </h2>
+            <h2 class="si-h-3" id="amount">
+                hfhfh
+            </h2>            
+        </div>
+    </section>
+
+
+    <script>
+
+        var pa = 20000;
+        var ri = 10;
+        var ny = 5;
+        var total = (pa*ri*ny)/100;
+        var amount = pa + total;
+ 
+        document.getElementById('pa').innerHTML = "1.Principal Amount = "+pa+"rs";
+        document.getElementById('ri').innerHTML = "2.Rate Of Intrest = "+ri+"%";
+        document.getElementById('ny').innerHTML = "3.Number Of Years = "+ny+"year";
+        document.getElementById('total').innerHTML = "Interest Amount :- "+total+"rs";
+        document.getElementById('amount').innerHTML = "Total Accrued Amount :- "+amount+"rs";
+
+    </script>
+
+</body>
+</html>

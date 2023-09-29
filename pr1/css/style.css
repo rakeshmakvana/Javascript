@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+
+/* simple intrest */
+.simple-i{
+    height: 100vh;
+    padding: 100px 150px;
+    background-color: white;
+}
+.si-box{
+    border: 2px solid black;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: rgb(21, 215, 154);
+}
+.si-h{
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: blueviolet;
+}
+.si-box-2{
+    border: 2px solid black;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: rgb(204, 214, 13);
+}
+.si-h-2{
+    padding: 20px 60px;
+    font-size: 30px;
+    color: rgb(231, 10, 10);
+}
+.si-h-3{
+    padding: 20px 100px;
+    border: 2px ;
+    font-size: 30px;
+    border-top: 2px solid black;
+    color: green;
+}
+
+
+/* marksheet */
+.marksheet{
+    height: 100vh;
+    padding: 50px 250px;
+    background-color: rgb(12, 12, 12);
+}
+.mr-box{
+    border: 2px solid white;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: rgb(19, 30, 237);
+}
+.mr-box-3{
+    border: 2px solid white;
+    background-color: rgb(19, 30, 237);
+}
+.mr-h{
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(43, 192, 226);
+}
+.mr-h-2{
+    padding: 10px;
+    font-size: 30px;
+    color: rgb(202, 226, 43);
+}
+.mr-box-2{
+    border: 2px solid white;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: rgb(19, 30, 237);
+}
+table{
+    width: 100%;
+}
+th,td{
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
