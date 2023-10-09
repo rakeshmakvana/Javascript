@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task13</title>
+</head>
+
+<body>
+
+    <h1>
+        Pattern
+    </h1>
+    <h2 id="pt">
+
+    </h2>
+
+
+    <script>
+
+        var row;
+        var col;
+        var str = '';
+
+        for (row = 5; row >= 1; row--) {
+
+            for (col = 5; col >= row; col--) {
+                str += col + " ";
+            }
+
+            str += "<br/>";
+
+        }
+        
+        document.getElementById('pt').innerHTML = str;
+
+
+    </script>
+
+</body>
+
+</html>

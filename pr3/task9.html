@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task9</title>
+</head>
+
+<body>
+
+    <h1>
+        The Integers Between 0 and 30
+    </h1>
+    <h2 id="sum">
+
+    </h2>
+
+
+    <script>
+
+        var total = 0;
+        var num = 0;
+        var str = '';
+
+        do {
+            total += num;
+            str += total + '<br>';
+            num++;
+        } while (num <= 30);
+
+        document.getElementById('sum').innerHTML = str;
+
+    </script>
+
+</body>
+
+</html>

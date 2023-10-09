@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+</head>
+
+<body>
+
+    <h1>
+        Multiplication Table
+    </h1>
+    <h2 id="mul">
+
+    </h2>
+
+
+    <script>
+
+        var n = 15;
+        var i = 1;
+        var result = '';
+
+        while (i <= 10) {
+            var mul = n * i;
+            result += n + " * " + i + " = " + mul + "<br/>";
+            i++;
+        }
+        
+        document.getElementById('mul').innerHTML = result;
+
+    </script>
+
+</body>
+
+</html>

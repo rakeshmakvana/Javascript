@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+</head>
+
+<body>
+
+    <h1>
+        Factorial Number
+    </h1>
+    <h2 id="fac">
+
+    </h2>
+
+
+    <script>
+
+        var n = 4;
+        var f = 1;
+        var a = 1;
+
+        while (a <= n) {
+            f = f * a;
+            a++;
+        }
+
+        document.getElementById('fac').innerHTML = "Factorial of " + n + " = " + f;
+
+    </script>
+
+</body>
+
+</html>

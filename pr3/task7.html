@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task7</title>
+</head>
+
+<body>
+
+    <h1>
+        The Magic Number
+    </h1>
+    <h2 id="mag">
+
+    </h2>
+
+
+    <script>
+
+        var limit = 1000; 
+        var currentNumber = 1;
+
+        while (currentNumber <= limit) {
+            var num = currentNumber;
+
+            while (num > 9) {
+                var sum = 0;
+                
+                while (num > 0) {
+                    sum += num % 10;
+                    num = Math.floor(num / 10);
+                }
+                num = sum;
+            }
+
+            if (num === 1) {
+                var magicList = document.getElementById('mag');
+                var li = document.createElement('li');
+                li.textContent = currentNumber;
+                magicList.appendChild(li);
+            }
+
+            currentNumber++;
+        }
+
+    </script>
+
+</body>
+
+</html>

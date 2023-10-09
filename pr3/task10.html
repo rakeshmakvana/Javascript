@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task10</title>
+</head>
+
+<body>
+
+    <h1>
+        Fize or Buzz or FizeBuzz
+    </h1>
+    <h2 id="fb">
+
+    </h2>
+
+
+    <script>
+
+        var num = 1;
+        var str = '';
+
+        do {
+            if (num % 3 === 0 && num % 5 === 0) {
+                str += num + ' ' + 'FizzBuzz' + '<br/>';
+            } else if (num % 3 === 0) {
+                str += num + ' ' + 'Fizz' + '<br/>';
+            } else if (num % 5 === 0) {
+                str += num + ' ' + 'Buzz' + '<br/>';
+            } else {
+                str += num + ' ' + 'Undifind' + '<br/>';
+            }
+            num++;
+        } while (num <= 100);
+
+        document.getElementById('fb').innerHTML = str;
+
+
+    </script>
+
+</body>
+
+</html>

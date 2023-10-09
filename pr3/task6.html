@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task6</title>
+</head>
+
+<body>
+
+    <h1>
+        The Prime Number
+    </h1>
+    <h2 id="pri">
+
+    </h2>
+
+
+    <script>
+
+        var limit = 1000; 
+        var currentNumber = 2; 
+
+        while (currentNumber <= limit) {
+            var isPrime = true;
+          
+            for (var i = 2; i < currentNumber; i++) {
+                if (currentNumber % i === 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            if (isPrime) {
+                var primeList = document.getElementById('pri');
+                var li = document.createElement('li');
+                li.textContent = currentNumber;
+                primeList.appendChild(li);
+            }
+
+            currentNumber++;
+        }
+
+    </script>
+
+</body>
+
+</html>

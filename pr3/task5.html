@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+</head>
+
+<body>
+
+    <h1>
+        Fibonacci Series
+    </h1>
+    <h2 id="fib">
+
+    </h2>
+
+
+    <script>
+
+        var limit = 1000; 
+        var prev = 1;
+        var current = 1;
+
+        while (current <= limit) {
+            var fibonacciList = document.getElementById('fib');
+            var li = document.createElement('li');
+            li.textContent = current;
+            fibonacciList.appendChild(li);
+
+            var next = prev + current;
+            prev = current;
+            current = next;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
