@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task8</title>
+</head>
+
+<body>
+
+    <h1>
+        Celsius To Fahrenheit
+    </h1>
+    <h2 id="fer">
+
+    </h2>
+
+
+    <script>
+
+        var c = 15;
+
+        function CelsiustoFahrenheit(c) {
+
+            fer = (c * 1.8) + 32;
+            return fer;
+
+        }
+
+        var ans = CelsiustoFahrenheit(c);
+        document.getElementById('fer').innerHTML = "Celsious = " + c + "<br/>" + "Ferenhit = " + ans;
+
+    </script>
+
+</body>
+
+</html>

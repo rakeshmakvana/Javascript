@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task10</title>
+</head>
+
+<body>
+
+    <h1>
+        Swaping
+    </h1>
+    <h2 id="sw1">
+
+    </h2>
+    <h2 id="sw2">
+
+    </h2>
+
+
+    <script>
+
+        var a = 3;
+        var b = 5;
+
+        function swap(a,b) {
+
+            document.getElementById('sw1').innerHTML = "Before Swap :-" +"<br/>"+ "A = " + a +"&nbsp;&nbsp;&nbsp;"+ "B = "+b;
+
+           a = a + b;
+           b = a - b;
+           a = a - b;
+
+           document.getElementById('sw2').innerHTML = "Before Swap :-" +"<br/>"+ "A = " + a +"&nbsp;&nbsp;&nbsp;"+ "B = "+b;
+
+        }
+
+        swap(a,b);
+
+    </script>
+
+</body>
+
+</html>
