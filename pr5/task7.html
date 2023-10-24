@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task7</title>
+</head>
+
+<body>
+
+    <h1>
+        Ascending Descending
+    </h1>
+    <h2 id="myarr">
+
+    </h2>
+    <h2 id="ascendingNum">
+
+    </h2>
+    <h2 id="descendingNum">
+
+    </h2>
+    <h2 id="myarr2">
+
+    </h2>
+    <h2 id="ascendingNum2">
+
+    </h2>
+    <h2 id="descendingNum2">
+
+    </h2>
+
+
+    <script>
+
+        var arr = [23,20,17, 12,5, 0, 1, 5, 12, 19, 20];
+
+        document.getElementById('myarr').innerHTML += "1."+'Array' + ' = ' + '[' + arr + ']';
+
+        var ascendingNum = arr.sort((a, b) => a - b);
+        document.getElementById('ascendingNum').innerHTML += "Ascending : " + ascendingNum;
+
+        var descendingNum = arr.sort((a, b) => b - a);
+        document.getElementById('descendingNum').innerHTML += "Descending : " + descendingNum;
+
+
+        var arr2 = ["Red", "Green", "White", "Black"];
+
+        document.getElementById('myarr2').innerHTML += "2."+'Array' + ' = ' + '[' + arr2 + ']';
+
+        var ascendingNum2 = arr2.sort();
+        document.getElementById('ascendingNum2').innerHTML += "Ascending : " + ascendingNum2;
+
+        var descendingNum2 = arr2.sort().reverse();
+        document.getElementById('descendingNum2').innerHTML += "Descending : " + descendingNum2;
+
+    </script>
+
+</body>
+
+</html>

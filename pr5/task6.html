@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task6</title>
+</head>
+
+<body>
+
+    <h1>
+        Square Of Array
+    </h1>
+    <h2 id="myarr">
+
+    </h2>
+    <h2 id="map">
+
+    </h2>
+
+
+    <script>
+
+        var arr = [2, 5, 6, 3, 8, 9];
+
+        document.getElementById('myarr').innerHTML += 'Array' + ' = ' + '[' + arr + ']';
+
+        var myfun = (arr) => {
+            return arr * arr;
+        };
+
+        var map = arr.map(myfun);
+        document.getElementById('map').innerHTML += "Square Array : " + map;
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task9</title>
+</head>
+
+<body>
+
+    <h1>
+        String
+    </h1>
+    <h2 id="str1">
+
+    </h2>
+    <h2 id="ans1">
+
+    </h2>
+    <h2 id="str2">
+
+    </h2>
+    <h2 id="ans2">
+        Ans = 
+    </h2>
+    <h2 id="str3">
+
+    </h2>
+    <h2 id="ans3">
+        Ans = 
+    </h2>
+
+
+    <script>
+
+        var str1 = "airplane";
+
+        document.getElementById('str1').innerHTML += 'String' + ' = ' + str1;
+
+        var ans1 = str1.charAt(2);
+        document.getElementById('ans1').innerHTML += 'Ans = ' + ans1;
+
+
+        var str2 = "oxoxoxox";
+
+        document.getElementById('str2').innerHTML += 'String' + ' = ' + str2;
+
+        for (let i = 0; i < str2.length; i++) {
+            if (i % 2 === 0) {
+                document.getElementById('ans2').innerHTML += str2[i];
+            } else {
+                document.getElementById('ans2').innerHTML += str2[i].toUpperCase();
+            }
+        }
+
+
+        var str3 = "A New Java Book";
+
+        document.getElementById('str3').innerHTML += 'String' + ' = ' + str3;
+
+        var lower = str3.toLowerCase();
+        var upper = str3.toUpperCase();
+        document.getElementById('ans3').innerHTML += lower +' , '+ upper;
+
+    </script>
+
+</body>
+
+</html>

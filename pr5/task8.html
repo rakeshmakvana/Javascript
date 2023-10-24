@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task8</title>
+</head>
+
+<body>
+
+    <h1>
+        Filter
+    </h1>
+    <h2 id="myarr">
+
+    </h2>
+    <h2 id="filter">
+
+    </h2>
+
+
+    <script>
+
+        var arr =  ['Python', 'Javascript', 'Go', 'Java', 'PHP', 'Ruby'];
+
+        document.getElementById('myarr').innerHTML += 'Array' + ' = ' + '[' + arr + ']';
+
+        var myfun = (arr) => {
+            return arr.length >= 8;
+        };
+
+        var filter = arr.filter(myfun);
+        document.getElementById('filter').innerHTML += "Filtered (8 or more characters) : " + filter;
+
+    </script>
+
+</body>
+
+</html>

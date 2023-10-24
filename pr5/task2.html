@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+</head>
+
+<body>
+
+    <h1>
+        Sum Of Array
+    </h1>
+    <h2 id="myarr">
+
+    </h2>
+    <h2 id="forloop">
+
+    </h2>
+    <h2 id="foreachloop">
+
+    </h2>
+
+
+    <script>
+
+        var arr = [20, 30, 50, 60, 80];
+
+        document.getElementById('myarr').innerHTML += 'Array' + ' = ' + '[' + arr + ']';
+
+
+        var forloop = (arr) => {
+            var sum = 0;
+            for (var i = 0; i < arr.length; i++) {
+                sum += arr[i];
+            }
+            return sum;
+        }
+
+        var ans = forloop(arr);
+        document.getElementById('forloop').innerHTML += "Sum using for loop : " + ans;
+
+
+        var foreachloop = (arr) => {
+            var sum = 0;
+            arr.forEach(myfun = (element) => {
+                sum += element;
+            });
+            return sum;
+        }
+
+        var ans = foreachloop(arr);
+        document.getElementById('foreachloop').innerHTML += "Sum using for Each loop : " + ans;
+
+    </script>
+
+</body>
+
+</html>

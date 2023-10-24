@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4</title>
+</head>
+
+<body>
+
+    <h1>
+        ASCII Value
+    </h1>
+    <h2 id="myarr">
+
+    </h2>
+    <h2 id="ascii">
+
+    </h2>
+
+
+    <script>
+
+        var arr = ["Rajesh", "Ramesh", "Avinash"];
+
+        document.getElementById('myarr').innerHTML += 'Array' + ' = ' + '[' + arr + ']';
+
+        var ascii = (arr) => {
+
+            const asciiArray = [];
+
+            for (let i = 0; i < arr.length; i++) {
+
+                const element = arr[i];
+                const elementASCII = [];
+
+                for (let j = 0; j < element.length; j++) {
+                    elementASCII.push(element.charCodeAt(j));
+                }
+
+                asciiArray.push(elementASCII);
+            }
+
+            return asciiArray;
+
+        }
+
+        var ans = ascii(arr);
+        document.getElementById('ascii').innerHTML += "ASCII Value : " + ans;
+
+    </script>
+
+</body>
+
+</html>

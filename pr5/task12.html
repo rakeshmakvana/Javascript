@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task12</title>
+</head>
+
+<body>
+
+    <h1>
+        Total Characters
+    </h1>
+    <h2 id="arr">
+
+    </h2>
+    <h2 id="len">
+
+    </h2>
+
+
+    <script>
+
+        var arr = " Rakesh Makvana ";
+        var space = arr.split(' ').join('');
+        var nospace = space.length
+
+        document.getElementById('arr').innerHTML += 'Array' + ' = ' + arr;
+
+        document.getElementById('len').innerHTML += 'Charecter = ' + nospace;
+
+    </script>
+
+</body>
+
+</html>

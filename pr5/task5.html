@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+</head>
+
+<body>
+
+    <h1>
+        Remove Negative Values
+    </h1>
+    <h2 id="myarr">
+
+    </h2>
+    <h2 id="filter">
+
+    </h2>
+
+
+    <script>
+
+        var arr = [-23, -20, -17, -12, -5, 0, 1, 5, 12, 19, 20];
+
+        document.getElementById('myarr').innerHTML += 'Array' + ' = ' + '[' + arr + ']';
+
+        var myfun = (arr) => {
+            return arr >= 0;
+        };
+
+        var filter = arr.filter(myfun);
+        document.getElementById('filter').innerHTML += "Positive Value : " + filter;
+
+    </script>
+
+</body>
+
+</html>

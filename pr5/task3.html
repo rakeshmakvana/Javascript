@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+
+<body>
+
+    <h1>
+        Maximum and Minimum
+    </h1>
+    <h2 id="myarr">
+
+    </h2>
+    <h2 id="max">
+
+    </h2>
+    <h2 id="min">
+
+    </h2>
+
+
+    <script>
+
+        var arr = [20, 30, 50, 60, 80];
+
+        document.getElementById('myarr').innerHTML += 'Array' + ' = ' + '[' + arr + ']';
+
+        var maxmin = (arr) => {
+
+            let max = arr[0];
+            let min = arr[0];
+
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+                if (arr[i] < min) {
+                    min = arr[i];
+                }
+            }
+
+            return { max, min };
+
+        }
+
+        var ans = maxmin(arr);
+        document.getElementById('max').innerHTML += "Maximum Value : " + ans.max;
+        document.getElementById('min').innerHTML += "Minimum Value : " + ans.min;
+
+    </script>
+
+</body>
+
+</html>

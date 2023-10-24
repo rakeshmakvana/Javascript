@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task11</title>
+</head>
+
+<body>
+
+    <h1>
+        Value Found
+    </h1>
+    <h2 id="arr">
+
+    </h2>
+    <h2 id="find">
+
+    </h2>
+
+
+    <script>
+
+        var arr = ["Rajesh","Ramesh","Ankit","Ajay","Raj"];
+        var value = "Ankit";
+
+        document.getElementById('arr').innerHTML += 'Array' + ' = ' + '[' + arr + ']';
+
+        if(arr.includes(value)){
+            document.getElementById('find').innerHTML += value + " is Found in Array";
+        }else{
+            document.getElementById('find').innerHTML += value + " is Not Found in Array";
+        }
+
+    </script>
+
+</body>
+
+</html>
