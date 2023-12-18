@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+</head>
+
+<body>
+
+    <h1>
+        Mobile
+    </h1>
+    <h2 id="mb">
+
+    </h2>
+
+    <script>
+
+        class Mobile {
+
+            constructor(model = "DefaultModel") {
+
+                this.model = model;
+
+            }
+
+            ID(color) {
+
+                this.color = color;
+                document.getElementById('mb').innerHTML += `Modal = ${this.model} ${'<br/>'} Color = ${this.color} ${'<br/>'} ID = ${this.model}-${this.color} ${'<br/><br/>'}`;
+
+            }
+
+        }
+
+        let mb1 = new Mobile('M1204');
+        let mb2 = new Mobile();
+
+        mb1.ID('Black');
+        mb2.ID('Red');
+
+    </script>
+
+</body>
+
+</html>

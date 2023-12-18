@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+
+<body>
+
+    <h1>
+        Person Information
+    </h1>
+    <h2 id="fa">
+
+    </h2>
+    <h2 id="ch">
+
+    </h2>
+
+    <script>
+
+        class Person {
+
+            constructor(name, age) {
+
+                this.name = name;
+                this.age = age;
+
+            }
+
+            Father() {
+                document.getElementById('fa').innerHTML += `Father :- ${'<br/>'} Name = ${this.name} ${'<br/>'} Age = ${this.age}`;
+            }
+
+            Child() {
+                document.getElementById('ch').innerHTML += `Children :- ${'<br/>'} Name = ${this.name} ${'<br/>'} Age = ${this.age}`;
+            }
+
+        }
+
+        let ft = new Person('Ramesh', '60');
+        let cl = new Person('Jay', '20');
+
+        ft.Father();
+        cl.Child();
+
+    </script>
+
+</body>
+
+</html>

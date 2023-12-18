@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+</head>
+
+<body>
+
+
+    <h1>
+        School Classroom
+    </h1>
+    <h2 id="st">
+
+    </h2>
+    <h2 id="fc">
+
+    </h2>
+    <h2 id="po">
+
+    </h2>
+
+
+    <script>
+
+        class School {
+
+            constructor(name, email, contact) {
+
+                this.name = name;
+                this.email = email;
+                this.contact = contact;
+
+            }
+
+            Students() {
+                document.getElementById('st').innerHTML += `Student :- ${'<br/>'} Student Name is ${this.name} , This Email is ${this.email} , This Contact Number is ${this.contact}.`;
+            }
+
+            Faculty() {
+                document.getElementById('fc').innerHTML += `Faculty :- ${'<br/>'} Faculty Name is ${this.name} , This Email is ${this.email} , This Contact Number is ${this.contact}.`;
+            }
+
+            Peon() {
+                document.getElementById('po').innerHTML += `Peon :- ${'<br/>'} Peon Name is ${this.name} , This Email is ${this.email} , This Contact Number is ${this.contact}.`;
+            }
+
+        }
+
+        let st = new School('Raj', 'rj2@gmail.com', '5547389298');
+        let fc = new School('Ajay', 'ajay@gmail.com', '9283746573');
+        let po = new School('Mit', 'mmm222@gmail.com', '9364453498');
+
+        st.Students();
+        fc.Faculty();
+        po.Peon();
+
+    </script>
+
+</body>
+
+</html>

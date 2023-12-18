@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7</title>
+</head>
+
+<body>
+
+    <h1>
+        Games
+    </h1>
+    <h2 id="gm">
+
+    </h2>
+    <h2 id="upgm">
+
+    </h2>
+
+    <script>
+
+        let games = ["minecraft", "fortnite", "pubg", "free-fire","gta"];
+
+        Array.prototype.toUpperCaseAll = function () {
+            return this.map(game => game.toUpperCase());
+        };
+
+        let uppercaseGames = games.toUpperCaseAll();
+
+        document.getElementById('gm').innerHTML += "Original Games :- " + games;
+        document.getElementById('upgm').innerHTML += "Uppercase Games :- " + uppercaseGames;
+
+    </script>
+
+</body>
+
+</html>

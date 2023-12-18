@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6</title>
+</head>
+
+<body>
+
+    <h1>
+        Employe
+    </h1>
+    <h2 id="em">
+
+    </h2>
+
+
+    <script>
+
+        class Employe {
+
+            constructor(name, email, salary) {
+
+                this.name = name;
+                this.email = email;
+                this.salary = salary;
+
+            }
+
+            Info(designation) {
+
+                this.designation = designation;
+                document.getElementById('em').innerHTML += `Name: ${this.name} ${'<br>'} Email: ${this.email} ${'<br>'} Salary: ${this.salary} ${'<br>'} Designation: ${this.designation} ${'<br><br/>'}`;
+
+            }
+
+        }
+
+        let em1 = new Employe('Tan', 'tan@gmail.com', '10000');
+        let em2 = new Employe('Raj', 'rj12@gmail.com', '15000');
+
+        em1.Info('Shoftwer Enginear');
+        em2.Info('Flutter Devloper');
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+</head>
+
+<body>
+
+    <h1>
+        Area of Shape
+    </h1>
+    <h2 id="rc">
+
+    </h2>
+    <h2 id="cr">
+
+    </h2>
+
+    <script>
+
+        class shape {
+
+            rectangle(w, h) {
+
+                let ans = w * h;
+                document.getElementById('rc').innerHTML += `Rectangle :- ${'<br>'} Width :- ${w} ${'<br>'} Height :- ${h} ${'<br>'} Area :- ${ans}`;
+
+            }
+
+            circle(r) {
+
+                let ans = 3.14 * r * r;
+                document.getElementById('cr').innerHTML += `Circle :- ${'<br>'} Redius :- ${r} ${'<br>'} Area :- ${ans}`;
+
+            }
+
+        }
+
+        let area = new shape();
+
+        area.rectangle(10, 2);
+        area.circle(2);
+
+    </script>
+
+</body>
+
+</html>
