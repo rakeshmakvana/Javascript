@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.heading h1 {
+    color: mix(#054960, #ff0055, 85%);
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.cr-h2 {
+    font-size: 26px;
+    font-weight: 750;
+    color: black;
+}
+
+.cr-h4 {
+    font-size: 20px;
+    font-weight: 650;
+    color: rgb(31, 29, 29);
+}
+
+.cr-p {
+    font-size: 16px;
+    font-weight: 550;
+    color: rgb(52, 50, 50);
+}
+
+.md-h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    text-transform: capitalize;
+}
+
+.md-h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(36, 33, 33);
+    text-transform: capitalize;
+}
+
+.of-h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    line-height: 24px;
+}
+
+.of-h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(29, 27, 27);
+    line-height: 20px;
+}
